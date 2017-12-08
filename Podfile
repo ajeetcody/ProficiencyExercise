@@ -8,7 +8,7 @@ target 'ProficiencyExercise' do
   # Pods for ProficiencyExercise
 
 pod 'PureLayout'
-
+pod 'SDWebImage'
 target 'ProficiencyExerciseTests' do
     inherit! :search_paths
     # Pods for testing

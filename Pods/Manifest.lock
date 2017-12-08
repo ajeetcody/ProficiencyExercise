@@ -1,12 +1,17 @@
 PODS:
   - PureLayout (3.0.2)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
 
 DEPENDENCIES:
   - PureLayout
+  - SDWebImage
 
 SPEC CHECKSUMS:
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: fd27e1d1395f3a4b9936f45abbc4541469b05ebc
+PODFILE CHECKSUM: 2d06da3982c2a54eddcc9497d2f4c165e4c11c68
 
 COCOAPODS: 1.3.1

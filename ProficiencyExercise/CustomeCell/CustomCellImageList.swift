@@ -35,6 +35,7 @@ class CustomCellImageList: UITableViewCell {
         contentView.addSubview(labelDescription)
         contentView.addSubview(labelSeperator)
         
+        
         img.autoPinEdge(toSuperviewEdge: .left, withInset: 5)
         img.autoSetDimensions(to: CGSize.init(width: 80, height: 80))
         img.autoPinEdge(toSuperviewEdge: .top, withInset: 20)

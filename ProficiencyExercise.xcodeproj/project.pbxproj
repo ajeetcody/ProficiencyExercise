@@ -17,6 +17,9 @@
 		77F71FA21FDAB8FB00D1A98A /* ProficiencyExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FA11FDAB8FB00D1A98A /* ProficiencyExerciseUITests.swift */; };
 		77F71FB91FDAD04500D1A98A /* CustomCellImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FB81FDAD04500D1A98A /* CustomCellImageList.swift */; };
 		77F71FBD1FDB059400D1A98A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FBC1FDB059400D1A98A /* Constants.swift */; };
+		77F71FC01FDB232900D1A98A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FBF1FDB232800D1A98A /* ApiManager.swift */; };
+		77F71FC21FDB240000D1A98A /* ApiResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FC11FDB240000D1A98A /* ApiResponseData.swift */; };
+		77F71FC41FDB24C000D1A98A /* ListItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71FC31FDB24C000D1A98A /* ListItemData.swift */; };
 		D367BE36C611701DD12D25D6 /* Pods_ProficiencyExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9A828B40EEFF7CB458B9DC /* Pods_ProficiencyExerciseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		77F71FAF1FDABE3600D1A98A /* ProficiencyExercise-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProficiencyExercise-Bridging-Header.h"; sourceTree = "<group>"; };
 		77F71FB81FDAD04500D1A98A /* CustomCellImageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellImageList.swift; sourceTree = "<group>"; };
 		77F71FBC1FDB059400D1A98A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77F71FBF1FDB232800D1A98A /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		77F71FC11FDB240000D1A98A /* ApiResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseData.swift; sourceTree = "<group>"; };
+		77F71FC31FDB24C000D1A98A /* ListItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemData.swift; sourceTree = "<group>"; };
 		85D5EF233B4E0009920B5212 /* Pods-ProficiencyExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProficiencyExerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProficiencyExerciseTests/Pods-ProficiencyExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE8692F838F48449805BD11 /* Pods-ProficiencyExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProficiencyExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProficiencyExercise/Pods-ProficiencyExercise.release.xcconfig"; sourceTree = "<group>"; };
 		A649DC9E4EADE1C2845C5199 /* Pods-ProficiencyExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProficiencyExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProficiencyExercise/Pods-ProficiencyExercise.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		77F71F801FDAB8FA00D1A98A /* ProficiencyExercise */ = {
 			isa = PBXGroup;
 			children = (
+				77F71FBE1FDB226700D1A98A /* ApiManager */,
 				77F71FBB1FDB050800D1A98A /* Constant */,
 				77F71FB71FDAD04500D1A98A /* CustomeCell */,
 				77F71F811FDAB8FA00D1A98A /* AppDelegate.swift */,
@@ -171,6 +178,16 @@
 				77F71FBC1FDB059400D1A98A /* Constants.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		77F71FBE1FDB226700D1A98A /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				77F71FBF1FDB232800D1A98A /* ApiManager.swift */,
+				77F71FC11FDB240000D1A98A /* ApiResponseData.swift */,
+				77F71FC31FDB24C000D1A98A /* ListItemData.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 		9F61FB1103F2ED9CC14AABE3 /* Pods */ = {
@@ -398,13 +415,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProficiencyExercise/Pods-ProficiencyExercise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -482,9 +503,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F71FB91FDAD04500D1A98A /* CustomCellImageList.swift in Sources */,
+				77F71FC41FDB24C000D1A98A /* ListItemData.swift in Sources */,
 				77F71F841FDAB8FA00D1A98A /* ViewController.swift in Sources */,
+				77F71FC01FDB232900D1A98A /* ApiManager.swift in Sources */,
 				77F71F821FDAB8FA00D1A98A /* AppDelegate.swift in Sources */,
 				77F71FBD1FDB059400D1A98A /* Constants.swift in Sources */,
+				77F71FC21FDB240000D1A98A /* ApiResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

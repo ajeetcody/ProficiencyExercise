@@ -48,8 +48,6 @@ class ApiManager {
                         
                         var listItemArray = [ListItemData]()
                         
-                        
-                        
                         if let title = json.value(forKey: "title") as? String {
                             
                             
@@ -61,7 +59,6 @@ class ApiManager {
                             
                             for dictionary in arr{
                                 
-                                // print("\(dictionary)")
                                 
                                 let testingDict:NSDictionary = dictionary
                                 let listItem = ListItemData()

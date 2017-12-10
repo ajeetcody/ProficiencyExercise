@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ProficiencyExercise.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09CA3CDEE7A66FA51065EAC5E0D222A6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>239D29BF536D550E6B067C8FA70A202B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>24E173FBEE8A948108BC0D8A53B1492B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80C35F95B7E390EED01CC382F5FD94DE</key>
+		<key>C4850A749DA27C0272CA6B4B07F4A9D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>E11F256D696C535875B02D8627599316</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A774E451384BA1E666B9753759568C9A</key>
+		<key>FD203C44AB03FB228FE0903C3AB8BB03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFFA7370194859716C4A45918F62AC8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

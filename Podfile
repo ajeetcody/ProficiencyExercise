@@ -10,7 +10,7 @@ target 'ProficiencyExercise' do
 pod 'PureLayout'
 pod 'SDWebImage'
 pod 'SwiftyJSON'
-pod 'Alamofire'
+
 
 target 'ProficiencyExerciseTests' do
     inherit! :search_paths

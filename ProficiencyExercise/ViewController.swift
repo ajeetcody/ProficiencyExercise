@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftSpinner
+
 
 class ViewController: UIViewController, UITableViewDelegate{
     
@@ -14,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate{
     var apiManager:ApiManager = ApiManager()
     var titleHeader:String?
     var itemListArray:[ListItemData] = []
+    var loadingIndicator:LoadingIndicator = LoadingIndicator()
     
     override func viewDidLoad() {
         
@@ -30,10 +33,20 @@ class ViewController: UIViewController, UITableViewDelegate{
         self.view.addSubview(myTableView)
         myTableView.autoPinEdgesToSuperviewEdges()
         
+        self.loadingIndicator.showActivityIndicator(uiView: self.view)
+        
+        
+      //  SwiftSpinner.show("Fetching Data....")
+        
         apiManager.callRestApiToFetchDetails(onCompletion: {(responseData:ApiResponseData?, error:NSError?) -> Void in
+            
             
             if error != nil {
             
+                
+            //SwiftSpinner.hide()
+              
+                
                 let alert = UIAlertController(title: "Message", message: "Operation Failed!", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
@@ -52,6 +65,11 @@ class ViewController: UIViewController, UITableViewDelegate{
                         
                         DispatchQueue.main.async {
                             self.myTableView.reloadData()
+                            
+                            self.loadingIndicator.hideActivityIndicator(uiView: self.view)
+                            
+                            
+                            //SwiftSpinner.hide()
                         }
                 }
             }

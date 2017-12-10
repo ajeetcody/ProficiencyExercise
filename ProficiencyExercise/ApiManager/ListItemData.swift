@@ -13,7 +13,6 @@ class ListItemData: NSObject {
     
     var title:String = ""
     var detail:String = ""
-    var imageUrl:String =
-    ""
+    var imageUrl:String = ""
 
 }

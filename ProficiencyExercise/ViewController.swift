@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate{
     var itemListArray:[ListItemData] = []
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         myTableView = UITableView()
@@ -31,23 +32,30 @@ class ViewController: UIViewController, UITableViewDelegate{
         
         apiManager.callRestApiToFetchDetails(onCompletion: {(responseData:ApiResponseData?, error:NSError?) -> Void in
             
-            // print("response message - \(responseData.title)")
+            if error != nil {
             
-            self.itemListArray = (responseData?.list)!
-            
-            print("\(responseData?.list)")
-            DispatchQueue.main.async {
-                self.myTableView.reloadData()
+                let alert = UIAlertController(title: "Message", message: "Operation Failed!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+
+                print("Error: \(error?.description)")
+                
+              
             }
+            else{
             
-            
-            
+                if let response:ApiResponseData = responseData {
+                
+                        self.itemListArray = (response.list)
+                    
+                        print("\(responseData?.list)")
+                        
+                        DispatchQueue.main.async {
+                            self.myTableView.reloadData()
+                        }
+                }
+            }
         })
-        
-        
-        
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,16 +74,7 @@ extension ViewController: UITableViewDataSource{
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-        
-        
-        
-        
         let cell:CustomCellImageList     = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomCellImageList
-        
-        
-        
-        print("\((itemListArray[indexPath.row] ).imageUrl)")
         
         cell.img.sd_setImage(with: URL(string:(itemListArray[indexPath.row] ).imageUrl), placeholderImage: UIImage(named: "PlaceHolderImage.png"), options: .refreshCached , completed: nil)
         
@@ -104,12 +103,6 @@ extension ViewController: UITableViewDataSource{
     }
     
     
-    
 }
 
-extension ViewController: UITabBarDelegate{
-    
-    
-    
-    
-}
+

@@ -43,14 +43,14 @@ class CustomCellImageList: UITableViewCell {
         labelTitle.autoPinEdge(toSuperviewEdge: .top, withInset: 20)
         labelTitle.autoPinEdge(.left, to:.right, of: img, withOffset: 5)
         labelTitle.autoPinEdge(toSuperviewEdge: .right, withInset: 5)
-        labelTitle.autoSetDimension(.height, toSize: Constants.TitleLabelDefaultHeight)
+       // labelTitle.autoSetDimension(.height, toSize: Constants.TitleLabelDefaultHeight)
         labelTitle.backgroundColor = UIColor.clear
         
         
         labelDescription.autoPinEdge(.top, to:.bottom, of: labelTitle, withOffset: 2)
         labelDescription.autoPinEdge(.left, to:.right, of: img, withOffset: 5)
         labelDescription.autoPinEdge(toSuperviewEdge: .right, withInset: 5)
-        labelDescription.autoSetDimension(.height, toSize: Constants.DescriptionDefaultLabelHeight)
+       // labelDescription.autoSetDimension(.height, toSize: Constants.DescriptionDefaultLabelHeight)
         labelDescription.backgroundColor = UIColor.clear
         
         

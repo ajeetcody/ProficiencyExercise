@@ -15,7 +15,7 @@ class Constants{
     
     // MARK: - Font Sizes
     
-    static   let TitleFont:UIFont =  UIFont (name: "Helvetica Neue", size: 20)!
+    static   let TitleFont:UIFont =  UIFont (name: "Helvetica Neue", size: 18)!
     static   let DescriptionFont:UIFont =  UIFont (name: "Helvetica Neue", size: 14)!
 
     // MARK: - Label Height

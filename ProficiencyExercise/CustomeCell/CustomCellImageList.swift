@@ -131,7 +131,6 @@ class CustomCellImageList: UITableViewCell {
         seperatorLabel.autoPinEdge(toSuperviewEdge: .bottom, withInset: 5)
         seperatorLabel.autoSetDimension(.height, toSize: 0.5)
         
-        
     }
     
     

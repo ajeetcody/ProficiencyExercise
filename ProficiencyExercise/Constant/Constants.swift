@@ -9,14 +9,20 @@
 
 class Constants{
     
+    // MARK:-  Colors 
+    
+    
+    static   let BackgroundColor = UIColor(colorLiteralRed: 64/255.0, green: 65/255.0, blue: 72/255.0, alpha: 1.0)
+    
+    
     // MARK: - Cell Identifiers
 
     static   let CellIdentifier = "BlueCellIdentifier"
     
     // MARK: - Font Sizes
     
-    static   let TitleFont:UIFont =  UIFont (name: "Helvetica Neue", size: 18)!
-    static   let DescriptionFont:UIFont =  UIFont (name: "Helvetica Neue", size: 14)!
+    static   let TitleFont:UIFont =  UIFont (name: "Futura-Medium", size: 18)!
+    static   let DescriptionFont:UIFont =  UIFont (name: "Futura-Medium", size: 14)!
 
     // MARK: - Label Height
     
@@ -30,15 +36,7 @@ class Constants{
     static   let ApiURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
     
     
-    // MARK: - Default Test Strings
-
     
-    static   let TestImageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg"
-    
-    static   let TestTitleString = "Beavers"
-    
-    static   let TestDescriptionString = "Beavers are second only to humans in their ability to manipulate and change their environment. They can measure up to 1.3 metres long. A group of beavers is called a colony"
-
 
     
 

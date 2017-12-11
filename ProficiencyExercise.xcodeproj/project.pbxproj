@@ -10,6 +10,8 @@
 		03E9719EA5050B7A598A754D /* Pods_ProficiencyExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E00CF90E356E50C3C8B8981 /* Pods_ProficiencyExercise.framework */; };
 		6EA9275113FBA0154AEC1E0C /* Pods_ProficiencyExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387C01251AC74D1E45BEFF84 /* Pods_ProficiencyExerciseUITests.framework */; };
 		77E017DD1FDD91FB00C5E83D /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E017DC1FDD91FB00C5E83D /* LoadingIndicator.swift */; };
+		77E017DF1FDDD03300C5E83D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E017DE1FDDD03200C5E83D /* MasterViewController.swift */; };
+		77E017E11FDDD73C00C5E83D /* JSONParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E017E01FDDD73C00C5E83D /* JSONParseManager.swift */; };
 		77F71F821FDAB8FA00D1A98A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71F811FDAB8FA00D1A98A /* AppDelegate.swift */; };
 		77F71F841FDAB8FA00D1A98A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F71F831FDAB8FA00D1A98A /* ViewController.swift */; };
 		77F71F891FDAB8FA00D1A98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F71F881FDAB8FA00D1A98A /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		2CAE66282596576BC33F083D /* Pods-ProficiencyExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProficiencyExerciseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProficiencyExerciseUITests/Pods-ProficiencyExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		387C01251AC74D1E45BEFF84 /* Pods_ProficiencyExerciseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProficiencyExerciseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E017DC1FDD91FB00C5E83D /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		77E017DE1FDDD03200C5E83D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		77E017E01FDDD73C00C5E83D /* JSONParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParseManager.swift; sourceTree = "<group>"; };
 		77F71F7E1FDAB8FA00D1A98A /* ProficiencyExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProficiencyExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F71F811FDAB8FA00D1A98A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77F71F831FDAB8FA00D1A98A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				77F71F881FDAB8FA00D1A98A /* Assets.xcassets */,
 				77F71F8A1FDAB8FA00D1A98A /* LaunchScreen.storyboard */,
 				77F71F8D1FDAB8FA00D1A98A /* Info.plist */,
+				77E017DE1FDDD03200C5E83D /* MasterViewController.swift */,
 			);
 			path = ProficiencyExercise;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				77F71FBF1FDB232800D1A98A /* ApiManager.swift */,
 				77F71FC11FDB240000D1A98A /* ApiResponseData.swift */,
 				77F71FC31FDB24C000D1A98A /* ListItemData.swift */,
+				77E017E01FDDD73C00C5E83D /* JSONParseManager.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -516,6 +522,8 @@
 				77F71F841FDAB8FA00D1A98A /* ViewController.swift in Sources */,
 				77F71FC01FDB232900D1A98A /* ApiManager.swift in Sources */,
 				77E017DD1FDD91FB00C5E83D /* LoadingIndicator.swift in Sources */,
+				77E017E11FDDD73C00C5E83D /* JSONParseManager.swift in Sources */,
+				77E017DF1FDDD03300C5E83D /* MasterViewController.swift in Sources */,
 				77F71F821FDAB8FA00D1A98A /* AppDelegate.swift in Sources */,
 				77F71FBD1FDB059400D1A98A /* Constants.swift in Sources */,
 				77F71FC21FDB240000D1A98A /* ApiResponseData.swift in Sources */,
